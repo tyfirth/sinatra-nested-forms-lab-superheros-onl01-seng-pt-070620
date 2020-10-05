@@ -1,3 +1,30 @@
+<h1> <%= @team.name %></h1>
 
+<h1> Team Motto: <%= @team.motto %> </h1>
 
+<% @members.each.with_index do |member, index| %>
+<% if index == 0 %>
+  <h1>Hero Name: <%= member.name %></h1>
+  <br>
+  <p>Hero Power: <%= member.power %></p>
+  <p>Hero Biography: <%= member.bio %></p>
+<% end %>
+<% end %>
 
+<% @members.each.with_index do |member, index| %>
+<% if index == 1 %>
+  <h1>Hero Name: <%= member.name %></h1>
+  <br>
+  <p>Hero Power: <%= member.power %></p>
+  <p>Hero Biography: <%= member.bio %></p>
+<% end %>
+<% end %>
+
+<% @members.each.with_index do |member, index| %>
+<% if index == 2 %>
+  <h1>Hero Name: <%= member.name %></h1>
+  <br>
+  <p>Hero Power: <%= member.power %></p>
+  <p>Hero Biography: <%= member.bio %></p>
+<% end %>
+<% end %>
